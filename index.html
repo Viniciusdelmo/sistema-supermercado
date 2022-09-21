@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Supermercado Baratinho</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+</head>
+<body background="./img/fundo.jpg">
+    <div class="inf_supermercado">
+        <h1 class="titulo">SUPERMERCADO BARATINHO</h1>
+    </div>
+    <div class="caixa">
+        <div class="valorCaixa">
+            <h2 class="valorTotal" id="valorTotal">Valor Total:</h2>
+            <h2 class="valorFinal" id="valorFinal">Valor Final:</h2>
+        </div>
+        <div class="caixa_prod">
+            <div class="cadastra_prod">
+                <h1 class="titulo_cadastra">Cadastro de produto</h1>
+                <hr></hr>
+                <input class="dados_prod" id="nomeProd" type="text" placeholder="Nome do produto">
+                <input class="dados_prod" id="valorProd" type="number" placeholder="Valor do produto">
+                <input class="dados_prod" id="codigoProd" type="text" placeholder="Código do produto">
+                <select class="dados_prod" id="tipoProd" placeholder="Tipo do produto">
+                    <option value="outro">Outro</option>
+                    <option value="alimentacao">Alimentação</option>
+                    <option value="carro">Carro</option>
+                    <option value="limpeza">Limpeza</option>
+                </select>
+                <input class="dados_prod" id="dataProd" type="text" placeholder="Data de  Validade">
+                <hr></hr>
+                <button id="adiconarProd"> ADICIONAR PRODUTO </button>
+                <button id="removaProd"> REMOVER PRODUTO </button>
+                <button id="aplicaDesconto"> APLICAR DESCONTO </button>
+            </div>
+            <div class="carrinho">
+                <h1 class="titulo_lista"> Lista de produtos</h1>
+                <hr></hr>
+                <div class="produto">
+                    <p>Nome</p>
+                    <p>Tipo</p>
+                    <p>Valor</p>
+                </div>
+                <div class="lista_prod">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./caixa.js" type="module"></script>
+</body>
+</html>
